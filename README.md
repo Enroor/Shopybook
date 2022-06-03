@@ -30,9 +30,13 @@ Para la instalación en el servidor debemos modificar algunos archivos de config
 En la carpeta config, accedemos al archivo settings.php y cambiar los siguientes parámetros:
 
 •	Host= ‘host del servidor’
+
 •	Dbname = ‘nombre de la base de datos’
+
 •	DB_USER = ‘usuario de la base de datos’
+
 •	DB_PASSWD = ‘Contraseña de la base de datos’
+
 
 En mi caso, estoy utilizando un servidor gratuito en el cual me asignan un nombre para la base de datos, usuario y contraseña.
 A continuación, al acceder a PhpMyAdmin desde tu servidor debemos crear las tablas con el archivo BD_shopybook_server.sql, para añadir los datos de pruebas y claves foráneas con el archivo datos_shopybook_server.sql, ambos localizados en la carpeta sql.
