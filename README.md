@@ -4,9 +4,12 @@ Proyecto tienda online DAW
 # 1.	Sistema de ayuda para su uso.
 
 Para poder acceder al panel del administrador de Shopybook el usuario se llamará admin y su contraseña inicial será admin, pudiéndose modificar ésta ultima una vez se haya logueado y entrado en su perfil desde la aplicación web para que sea más segura.
+
 En el panel administrador podrás añadir nuevos libros, editar los libros existentes, eliminar los libros que no necesite, añadir categorías o eliminarlas y ver los pedidos de los clientes y modificar el estado del pedido.
+
 En el icono del usuario podrás acceder a tu perfil dónde solamente podrás modificar todo menos tu nombre de usuario, recuerda que el usuario siempre se llamará admin.
 Podrás buscar un libro en concreto desde el buscador siempre y cuando nos encontremos en la página Inicio.
+
 Si el cliente se quiere poner en contacto con el administrador podrá mandar un mensaje a través del formulario de contacto de Shopybook siempre que el servidor donde esté alojado lo permita. Para recibir los emails de los clientes tendrás que modificar el archivo contacto.php y poner tu e-mail en la variable $para.
 El cliente registrado podrá cambiar sus datos personales desde su perfil, así como ver sus pedidos y el estado en el que se encuentran.
 
@@ -15,7 +18,9 @@ El cliente registrado podrá cambiar sus datos personales desde su perfil, así 
 #  2.1.	Instalación en local.
 
 Para instalar Shopybook de manera local necesitaremos un servidor web como Xampp donde podremos crear nuestro servidor de manera local utilizando Apache y PhpMyAdmin para la gestión de la base de datos.
+
 Para crear la base de datos, accedemos al panel de PhpMyAdmin mediante localhost a través de la url de nuestro navegador. Para crear la base de datos copiamos el contenido del archivo BD_shopybook.sql del directorio sql en insertar sentencia SQL.
+
 A continuación, copiamos el contenido del archivo datos_shopybook .sql e insertará datos de pruebas, así como el usuario ‘admin’ para la administración de la aplicación web.
 La configuración de Shopybook está programada para que funcione de manera local por defecto.
  
