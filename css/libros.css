@@ -1,0 +1,539 @@
+/****************** CSS PARA LOS LIBROS EN INDEX.PHP *******************/
+#libros{
+    display: flex;
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.msg-busqueda{
+    position: relative;
+    margin: 10px auto;
+    width: 300px;
+    color: rgba(255,104,219,1);
+    background-color: pink;
+}
+.card-libro-find{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 160px;
+    margin: 30px auto;
+    height: 470px;
+}
+.card-libro{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 155px;
+    min-width: 155px;
+    margin: 10px;
+    margin-top: 30px;
+}
+h5{
+    margin: 0 auto;
+    padding: 8px;
+    width: 100%;
+    height: 40px;
+    white-space: normal;
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-family: Work Sans;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.autor{
+    color: #d9017a;
+    font-size: .75rem;
+    font-family: Work Sans,Source Sans Pro,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin-left: 8px;
+    text-transform: uppercase;
+    height: 0;
+}
+.precio-libro{
+    color: #b71c1c;
+    font-size: 1.25rem;
+    letter-spacing: .0125em;
+    line-height: 2rem;
+    font-family: "Source Serif Pro",Source Sans Pro,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-weight: 700;
+    margin-left: 8px;
+}
+.btns-libros{
+    text-align: center;
+}
+/*Imagen de los libros*/
+.portada{
+    height: 190px;
+    width: 90%;
+    margin-left: 5%;
+}
+.card-body{
+    border: 1px solid black;
+}
+/*****BOTONES AÑADIR, VER y EDITAR(admin))*****/
+.btn-libro-anadir{
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  border: 2px solid #84cfee;
+  background: #84cfee;
+  margin: -50px 13px;
+}
+.btn-libro-anadir:hover {
+  background: #4ecdc4;
+  border: 2px solid #4ecdc4;
+}
+.btn-libro-anadido{
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  border: 2px solid #4ecdc4;
+  background: #4ecdc4;
+  margin: -50px 13px;
+}
+.btn-libro-no-disponible{
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  border: 2px solid #ef233c;
+   background: #ef233c;
+  margin: -50px 13px;
+}
+.btn-libro-ver {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #84cfee;
+  color: #84cfee;
+  margin-top: -10%;
+  text-transform: uppercase;
+}
+.btn-libro-ver:hover {
+  color: #fff;
+  background: #84cfee;
+}
+.btn-libro-editar-admin {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #84cfee;
+  color: #84cfee;
+  margin-top: -10%;
+  text-transform: uppercase;
+}
+.btn-libro-editar-admin:hover {
+  color: #fff;
+  background: #84cfee;
+}
+
+/******* TABLA LIBROS DE ADMINISTRADOR *******/
+/*Botón añadir libro*/
+#anadir{
+    text-align: left;
+    width: 70%;
+    margin: 10px auto;
+}
+#anadir img{
+    width: 30px;
+    vertical-align: middle;
+    margin: 10px;
+}
+#anadir img:hover{
+    transform: scale(0.9);
+}
+#anadir a:hover{
+    color: blue;
+}
+#anadir a{
+    text-decoration: none;
+    color: #000000;
+}
+/*Botón añadir categoría*/
+#anadir-categoria{
+    text-align: left;
+    width: 30%;
+    margin: 10px auto;
+}
+#anadir-categoria img{
+    width: 30px;
+    vertical-align: middle;
+    margin: 10px;
+}
+#anadir-categoria img:hover{
+    transform: scale(0.9);
+}
+#anadir-categoria a:hover{
+    color: blue;
+}
+#anadir-categoria a{
+    text-decoration: none;
+    color: #000000;
+}
+/*Tabla que muestra los libros*/
+table {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size:12px;
+    width:70%;
+    border-collapse: collapse;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 5px 12px -12px rgb(0 0 0 / 29%);
+    font-family: "Source Serif Pro",Source Sans Pro,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+#tabla-pedidos{
+    margin-top: 50px;
+}
+#tabla-categorias{
+    width: 30%;
+}
+tbody{
+    box-shadow: 0 0px 40px 0px rgb(0 0 0 / 15%);
+}
+table thead tr th{
+    background: #6c7ae0;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 20px;
+}
+/*Redondear primera y ultima esquina de th*/
+table th:first-child{
+    border-radius: 10px 0px 0px 0px;
+}
+table th:last-child{
+    border-radius: 0px 10px 0px 0px;
+}
+
+/*Cambia color de filas impares*/
+table tr:nth-child(odd){
+    background-color: #f8f6ff ;
+}
+table td {
+    border-width: 1px;
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.4;
+}
+/*Cambia el color de la fila al pasar el cursor*/
+table tr:hover {
+    background-color: #f1c9ff;
+}
+.editar img:hover{
+    border-radius: 50px;
+    background-color: #c4ffc8;
+}
+.edicion{
+    width: 20px;
+    padding: 5px;
+}
+.eliminar img:hover{
+    border-radius: 50px;
+    background-color: #ff8484;
+}
+button[type='submit']{
+    vertical-align: middle;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+/************** FORM PARA INSERTAR NUEVOS LIBROS O ACTUALIZAR **************/
+#insertar-form{
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+#actualizar-form{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+#container-datos{
+    margin: 0 auto;
+    margin-left: -20%;
+}
+#autor{
+    width: 40%;
+}
+#container-datos input[type='text'], input[type='number']{
+    background-color: #fbfbfb;
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+#container-datos select{
+    width: 150px;
+    background-color: #fbfbfb;
+    height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#container-datos textarea{
+    background-color: #fbfbfb;
+    width: 80%;
+    height: 100px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+#container-datos input[type='submit']{
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #a14bcc;
+    border-color: #ab4493;
+    border-style: solid;
+    border-radius: 10px;
+    width: 120px;
+    cursor: pointer;
+}
+#container-datos input[type='submit']:hover{
+    background-color: #d170ba;
+    cursor: pointer;
+}
+.datos{
+    margin: 0 auto;
+    ;
+}
+.datos #precio{
+    width: 50px;
+}
+.datos #stock{
+    width: 50px;
+}
+.datos div{
+    border: 1px;
+    display: inline-block;
+    width: auto;
+    margin: auto;
+    text-align: left;
+}
+.datos img{
+    height: 100px;
+    width: 80px;
+    box-shadow: 2px 0px 3px 2px grey;
+}
+#footer-form{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+.obligatorio{
+    color: red;
+}
+
+/************** FORM PARA INSERTAR NUEVAS  CATEGORÍAS O ACTUALIZAR **************/
+#insertar-form-categoria{
+    display: none;
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+#nom-categoria{
+    background-color: #fbfbfb;
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+/********************PAGINACIÓN**********************/
+.row{
+    margin: 0 auto;
+    text-align: center;
+}
+#page-actual{
+    margin-top: -20px;
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.active:focus {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+/*******FORM DE LOS PEDIDOS********/
+#foooter-form-pedidos input{
+    height: 30px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #a14bcc;
+    border-color: #ab4493;
+    border-style: solid;
+    border-radius: 10px;
+    width: 120px;
+    cursor: pointer;
+}
+#footer-form-pedidos input:hover{
+    background-color: #d170ba;
+    cursor: pointer;
+}
+
+/*******PAGINA CATEGORIAS (CLIENTE)********/
+#container-categorias{
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+}
+#container-categorias div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+}
+#container-categorias div a {
+  min-width: 20%;
+  height: 20px;
+  color: #fff;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  border: none;
+  background: #efefef;
+  box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+  color: #585858;
+  margin: 6px 6px 10px 6px;
+  text-decoration: none;
+}
+#container-categorias div a:hover {
+  box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+
+/*********************TABLA PEDIDOS ADMIN************************/
+/*Botón para modificar el estado del pedido*/
+.modifica-estado {
+  min-width: 85px;
+  height: 20px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background-image: linear-gradient(35deg, #56baed 0%, #c797eb 70%);
+  font-size: .75rem;
+}
+.modifica-estado:hover {
+  background-image: linear-gradient(35deg,#c797eb 0%, #56baed  70%);
+}
+#select-pedidos{
+    background-color: #fbfbfb;
+    height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#tabla-perfil{
+    width: 100%;
+    text-align: left;
+    font-size: .9rem;
+}
+#tabla-perfil th{
+    padding: 10px;
+}
+#tabla-perfil th:first-child{
+    border-radius: inherit;
+}
+#tabla-perfil th:last-child{
+    border-radius: inherit;
+    color: grey;
+}

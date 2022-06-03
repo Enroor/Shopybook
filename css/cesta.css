@@ -1,0 +1,327 @@
+.cesta-titulo{
+    margin: 0 auto;
+    width: 50%;
+}
+.cesta-titulo h4{
+    font-weight: 100;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: .01em solid black;
+    padding: 0% 6% 3% 6%;
+}
+.cesta-titulo h1{
+    line-height: 2rem;
+    padding: 20px 0;
+    border-bottom: .01em solid black;
+    padding: 0% 6% 3% 6%;
+}
+/*ERROR AL FINALIZAR LA COMPRA*/
+#error-compra {
+    text-align: center;
+    padding-bottom: 40px;
+}
+/*TABLA DE LA CESTA*/
+#tabla-cesta{
+    width: 50%;
+    background: #fff;
+    box-shadow: 0 5px 12px -12px rgb(0 0 0 / 29%);
+    margin: -20px auto;
+    font-family: "Source Serif Pro",Source Sans Pro,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+#tabla-cesta thead{
+    background: #99b19c;
+}
+#tabla-cesta thead th{
+    border: none;
+    padding: 10px 30px 10px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+#tabla-cesta th{
+    border-radius: inherit;
+}
+#tbody-cesta tr{
+    margin-bottom: 3px;
+    border-bottom: .1em solid grey;
+    height: 50px;
+}
+#tbody-cesta tr:last-child{
+    border: inherit;
+}
+#tbody-cesta th{
+    background: #ffffff;
+    text-align: center;
+    padding: 20px 0px 20px 15px;
+}
+#tbody-cesta td{
+    border: none;
+    padding: 30px;
+    font-size: 14px;
+    background: #fff;
+    border-bottom: 4px solid #f8f9fd;
+    vertical-align: middle;
+}
+#tbody-cesta tr .text-total{
+    text-align: left;
+}
+#tbody-cesta tr #precio-envio{
+    padding-left: 15px;
+}
+.img-cesta img{
+    width: 80px;
+    margin-left: 50%;
+}
+.titulo-autor{
+    margin: 10px;
+    font-size: .75rem;
+    line-height: 1.25rem;
+}
+.titulo-autor h4 {
+    margin: 0 auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 100px;
+}
+.titulo-autor h6 {
+    margin-top: -1px;
+    color: grey;
+    text-transform: uppercase;
+    font-size: .7rem;
+    text-align: left;
+     margin-left: 100px;
+}
+.eliminar-producto-cesta img{
+    width: 25px;
+    margin-left: -30px;
+}
+.eliminar-producto-cesta img:hover{
+    transform: scale(1.2);
+}
+/***FORMULARIO DE PAGO***/
+#realizar-pago{
+    display: none;
+}
+/*************BOTONES**********/
+#pagar {
+  min-width: 120px;
+  height: 35px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background-color: #3C8DC5;
+}
+#pagar:hover {
+  background-color: #6FB7E9;
+  transition: 0.3s ease;
+}
+#pagar:active {
+  top: 2px;
+}
+#volver-tienda{
+  min-width: 120px;
+  height: 35px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background: #a0eaff;
+}
+#volver-tienda:hover {
+    background-color: #6FB7E9;
+  transition: 0.3s ease;
+}
+#volver-tienda:active {
+  top: 2px;
+}
+#vaciar{
+  min-width: 120px;
+  height: 35px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background: #ff4f4f;
+}
+#vaciar:hover {
+  background: #ff8e8e;
+}
+#vaciar:active {
+  top: 2px;
+}
+#botones-cesta{
+    margin: 5% auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#botones-cesta a{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/********************FORM DE PAGO***************/
+#form-pago{
+    margin: 0 auto;
+    width: 50%;
+    background-color: rgba(178,209,229,0.7);
+}
+#form-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#card-wrapper {
+  background-color: #6FB7E9;
+  width: 100%;
+  display: flex;
+
+}
+#personal-information {
+  background-color: #3C8DC5;
+  color: #fff;
+  padding: 1px 0;
+  text-align: center;
+}
+
+#form-pago input {
+  margin: 1px 0;
+  padding-left: 3%;
+  font-size: 14px;
+}
+.input-field {
+    width: 97%;
+}
+.input-field:last-child{
+    margin-top: 5px;
+}
+#form-pago input[type="text"]{
+  display: block;
+  height: 50px;
+  border: none;
+}
+
+#form-pago input[type="submit"]{
+  display: block;
+  height: 40px;
+  width: 170px;
+  border: none;
+  background-color: #3C8DC5;
+  color: #fff;
+  margin-top: 2px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 5px;
+}
+#form-pago input[type="submit"]:hover{
+  background-color: #6FB7E9;
+  transition: 0.3s ease;
+}
+#cesta input[type="submit"]{
+    background-color: #a0eaff;
+}
+.column-left {
+  width: 30%;
+  float: left;
+  margin-bottom: 2px;
+}
+.column-right {
+  width: 63%;
+  float: right;
+}
+#tarjeta{
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 44%;
+    position: absolute;
+}
+#form-container div {
+    background: #fff;
+    margin-top: 50px;
+    padding-top: 26px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#form-container div a{
+    text-decoration: none;
+    margin: 10px;
+}
+#precio-factura{
+    height: 5px;
+    padding: 0px 10px 10px 10px;
+    font-size: 1.5vw;
+    text-align: center;
+}
+/********compra finalizada*******/
+#compra-realizada{
+    width: 100%;
+}
+#compra-realizada div{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+/*********TICKET DE COMPRA***************/  
+#factura{
+    height: 50%;
+    padding-bottom: 50px;
+}
+#factura h5{
+    margin: 0 auto;
+    height: 0;
+    white-space: normal;
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+#fecha-factura{
+    border-bottom: 1px dotted black;
+}
+#factura div{
+    border: 1px dashed black;
+}
+#productos{
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 50px;
+    font-size: 1.2vw;
+}
+#total{
+    text-align: left;
+    border-top: 1px dotted black;
+    font-size: 1.2vw;
+    padding-left: 100px;
+    padding-top: 10px;
+    
+}

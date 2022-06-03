@@ -1,0 +1,10 @@
+html{
+  min-height: 100%;
+  position: relative;
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    font-family: Work Sans,Source Sans Pro,Roboto,Helvetica Neue,Arial,sans-serif, arial;
+}

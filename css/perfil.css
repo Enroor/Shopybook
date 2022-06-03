@@ -1,0 +1,115 @@
+#perfil-container{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
+#menu-perfil{
+    border-right: 1px solid black;
+    margin-top: 30px;
+    margin-right: 20%;
+    margin-left: auto;
+    position: sticky;
+}
+#menu-perfil ul{
+    list-style: none;
+}
+#menu-perfil ul li{
+    margin: 25px;
+}
+#menu-perfil ul li a {
+    text-decoration: none;
+}
+#menu-perfil ul li a:hover{
+    color: #4ecdc4;
+}
+#datos-perfil{
+    margin: 50px auto;
+    width: 310px;
+    margin-left: -0px;
+}
+#datos-pedido{
+    display: none;
+    margin: 0 auto;
+    margin-left: -20%;
+    padding-bottom: 20%;
+    margin-top: 60px;
+}
+#modificar-perfil{
+    display: none;
+    margin: 0 auto;
+    width: 95%;
+    margin-left: -250px;
+}
+/***************TABLA PEDIDOS USUARIO************/
+#tabla-pedidos-user{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 12px;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 5px 12px -12px rgb(0 0 0 / 29%);
+    font-family: "Source Serif Pro",Source Sans Pro,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+#tabla-pedidos-user tr:nth-child(odd) {
+    background-color: #f8f6ff;
+}
+#tabla-pedidos-user th:first-child {
+    border-radius: 10px 0px 0px 0px;
+}
+#tabla-pedidos-user thead tr th {
+    background: #6c7ae0;
+    border: none;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+}
+#tabla-pedidos-user tbody tr td{
+    font-size: .7rem;
+}
+/*****************FORM PARA MODIFICAR LOS DATOS DEL PERFIL**********************/
+#actualizar-form-perfil{
+    width: 0%;
+    margin-left: 200px;
+    padding-bottom: 20px;
+}
+#container-datos-perfil #datos-perfil label{
+    display: inline-block;
+    width: 130px;
+}
+#container-datos-perfil input[type='text'], input[type='number'],input[type='password']{
+    background-color: #fbfbfb;
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+#container-datos-perfil input[type='submit']{
+    height: 30px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #a14bcc;
+    border-color: #ab4493;
+    border-style: solid;
+    border-radius: 10px;
+    width: 120px;
+    color: #fff;
+    cursor: pointer;
+}
+#container-datos-perfil input[type='submit']:hover{
+    background-color: #d170ba;
+    cursor: pointer;
+}
+#footer-form-perfil{
+    width: 200px;
+    text-align: center;
+}

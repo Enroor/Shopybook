@@ -1,0 +1,61 @@
+/**********************
+          MENU
+ ***********************/
+nav{
+    display: grid;
+    justify-content: center;
+    background-color: #84cfee;
+    font-family: "Poppins", sans-serif;
+    position: sticky;
+    top: 0;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    font-size: 14px;
+}
+
+nav li{
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    transition: 300ms;
+    border-bottom: 1px solid transparent;
+    height: 18px;
+    padding: 5px 25px;
+}
+
+nav li:hover{
+    border-color: black;
+}
+
+#container-carrito{
+    background-color: inherit;
+    border: inherit;
+    margin-left: 40px;
+}
+#carrito-compra{
+    width: 30px;
+    vertical-align: middle;
+}
+
+/* CSS para posicionar el número cerca del carrito*/
+#carrito-compra {
+  position: relative;
+}
+
+#carrito-num {
+  position: absolute;
+  top: 15px;
+  margin-left: 20px;
+  background: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2px;
+}
